@@ -1,7 +1,8 @@
 import React from 'react'
-import { getNearByPersons } from '../services.persons.service'
-export class PersonFindComponent extends React {
+import { getNearByPersons } from '../services/persons.service'
+export class PersonFindComponent extends React.Component {
     constructor(props) {
+        super(props);
         this.state = {
             persons: []
         }
